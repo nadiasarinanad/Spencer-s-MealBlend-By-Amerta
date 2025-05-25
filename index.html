@@ -1,107 +1,103 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Spencer's Meal Blend</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    body { background-color: #fdf6f0; }
+    .primary { background-color: #8b5c2f; }
+    .secondary { background-color: #c29d75; }
+    .accent { background-color: #e8d3b8; }
+    html, body {
+        scroll-behavior: smooth;
+        }
+  </style>
+    <meta name="description" content="Spencer's Meal Blend adalah minuman serbuk pengganti makanan tinggi protein, rendah kalori, dan tanpa gula. Ideal untuk gaya hidup aktif." />
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="text-gray-800 font-sans">
+    <!-- FAVICON -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" type="image/png" />
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
+  <!-- NAVBAR -->
+  <header class="primary text-white p-4 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="font-bold text-xl">Spencer's Meal Blend By Amerta</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:underline">Tentang</a></li>
+          <li><a href="#testimonials" class="hover:underline">Testimoni</a></li>
+          <li><a href="#contact" class="hover:underline">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <!-- HERO SECTION -->
-  <section class="bg-gradient-to-r from-green-100 to-green-200 py-20 text-center">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">Spencer's Meal Blend By Amerta</h1>
-    <p class="text-lg md:text-xl mb-6">Tinggi Protein. Rendah Kalori. Tanpa Gula. Untuk Kamu yang Sibuk dan Ingin Tetap Sehat.</p>
-    <a href="#beli" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg transition">Beli Sekarang</a>
+  <section class="accent py-20 text-center" data-aos="fade-up">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 text-brown-800">Spencer's Meal Blend By Amerta</h1>
+    <p class="text-lg md:text-xl mb-6 text-brown-700">Tinggi Protein. Rendah Kalori. Tanpa Gula. Untuk Kamu yang Sibuk dan Ingin Tetap Sehat.</p>
+    <a href="#beli" class="primary hover:bg-brown-700 text-white px-6 py-3 rounded-full text-lg transition">Beli Sekarang</a>
   </section>
 
   <!-- ABOUT SECTION -->
-  <section class="py-16 px-6 md:px-20">
+  <section id="about" class="py-16 px-6 md:px-20 bg-white" data-aos="fade-right">
     <h2 class="text-3xl font-semibold text-center mb-8">Tentang Produk</h2>
     <div class="max-w-4xl mx-auto text-center">
       <p class="mb-4">Spencer's Meal Blend adalah minuman serbuk pengganti makanan yang dibuat khusus untuk mendukung gaya hidup aktifmu. Tinggi protein untuk otot, tinggi serat untuk pencernaan, rendah kalori supaya berat badan tetap terjaga, dan tanpa tambahan gula.</p>
     </div>
   </section>
 
-  <!-- WHY US SECTION -->
-  <section class="bg-gray-100 py-16 px-6 md:px-20">
-    <h2 class="text-3xl font-semibold text-center mb-8">Kenapa Pilih Kami?</h2>
-    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-      <div class="p-4">
-        <h3 class="text-xl font-bold mb-2">🌱 Tinggi Protein</h3>
-        <p>Bantu bangun dan jaga massa otot dengan mudah.</p>
-      </div>
-      <div class="p-4">
-        <h3 class="text-xl font-bold mb-2">💧 Rendah Kalori</h3>
-        <p>Nikmati tanpa rasa bersalah, cocok untuk dietmu.</p>
-      </div>
-      <div class="p-4">
-        <h3 class="text-xl font-bold mb-2">🚫 Tanpa Gula</h3>
-        <p>Rasa manis alami, tanpa tambahan gula buatan.</p>
-      </div>
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="secondary py-16 px-6 md:px-20" data-aos="zoom-in">
+    <h2 class="text-3xl font-semibold text-center mb-8 text-white">Apa Kata Ahli Gizi?</h2>
+    <div class="max-w-4xl mx-auto text-center bg-white p-6 rounded shadow">
+      <img src="https://cdn0-production-images-kly.akamaized.net/Eamq30iW41omIpyrPlp42BzDjx4=/1200x675/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4789276/original/073503800_1711793711-IMG-20240330-WA0021.jpg" alt="dr. Maria Angela, Sp.GK" class="w-24 h-24 mx-auto rounded-full mb-4">
+      <p class="italic mb-2">"Spesialis Gizi, kita bakal bongkar manfaat dari 4 bahan utama di Spencer’s MealBlend. Mulai dari Chia Seeds, Pea Protein, Almond, sampai Stevia. Cari tahu keistimewaan tiap bahan yang bikin Spencer’s MealBlend jadi pilihan tepat buat gantiin makananmu! ✨."</p>
+      <p class="font-bold">- dr. Maria Angela, Sp.GK</p>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-<section class="py-16 px-6 md:px-20">
-  <h2 class="text-3xl font-semibold text-center mb-8">Apa Kata Mereka?</h2>
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="bg-white p-6 rounded shadow">
-      <p class="italic mb-2">"Minum ini bikin aku kenyang sampai siang, padahal cuma sarapan ringan!"</p>
-      <p class="font-bold">- Rina, Mahasiswa</p>
-    </div>
-    <div class="bg-white p-6 rounded shadow">
-      <p class="italic mb-2">"Cepat, praktis, dan rasanya enak. Cocok buat pekerja sibuk kayak aku."</p>
-      <p class="font-bold">- Dika, Pegawai Kantoran</p>
-    </div>
-    <div class="bg-white p-6 rounded shadow">
-      <p class="italic mb-2">"Aku nggak nyangka dietku bisa senyaman ini. Thank you Spencer's Meal Blend!"</p>
-      <p class="font-bold">- Sari, Freelancer</p>
-    </div>
-    <div class="bg-white p-6 rounded shadow">
-      <p class="italic mb-2">"Biasanya aku gampang lapar sore, sekarang bisa tahan sampai malam."</p>
-      <p class="font-bold">- Rudi, Guru</p>
-    </div>
-    <div class="bg-white p-6 rounded shadow">
-      <p class="italic mb-2">"Rasanya surprisingly enak untuk produk tanpa gula. Jadi langganan nih."</p>
-      <p class="font-bold">- Linda, Ibu Rumah Tangga</p>
-    </div>
-    <div class="bg-white p-6 rounded shadow">
-      <p class="italic mb-2">"Cocok buat bekal hiking dan olahraga outdoor. Ringan & praktis dibawa."</p>
-      <p class="font-bold">- Yoga, Pendaki Gunung</p>
-    </div>
-    <div class="bg-white p-6 rounded shadow">
-      <p class="italic mb-2">"Aku sering skip makan karena sibuk. Sekarang nggak khawatir lagi kekurangan nutrisi."</p>
-      <p class="font-bold">- Mia, Desainer Grafis</p>
-    </div>
-    <div class="bg-white p-6 rounded shadow">
-      <p class="italic mb-2">"Harga oke, kualitas oke, dan hasilnya beneran kerasa di tubuh."</p>
-      <p class="font-bold">- Andi, Atlet Amatir</p>
-    </div>
-    <div class="bg-white p-6 rounded shadow">
-  <p class="italic mb-2">"Aku awalnya skeptis, tapi setelah coba seminggu, aku malah ketagihan! Rasanya ringan tapi ngenyangin."</p>
-  <p class="font-bold">- Farhan, Mahasiswa Teknik</p>
-</div>
-
+  <!-- CTA SECTION -->
+<section id="beli" class="primary text-white py-16 text-center">
+  <h2 class="text-3xl font-semibold mb-4">Siap Hidup Lebih Sehat?</h2>
+  <p class="mb-6">Klik tombol di bawah untuk membeli Spencer's Meal Blend di marketplace favoritmu.</p>
+  <div class="flex justify-center gap-4">
+    <a href="https://shopee.co.id/shop/1470692711" target="_blank" class="bg-white text-yellow-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Shopee</a>
+    <a href="https://www.tokopedia.com/smealblend" target="_blank" class="bg-white text-green-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Tokopedia</a>
   </div>
 </section>
 
+ <section id="contact" class="bg-white py-16 px-6 md:px-20">
+  <h2 class="text-3xl font-semibold text-center mb-8">Kontak Kami</h2>
+  <div class="max-w-md mx-auto space-y-4 text-center">
+    <p class="mb-4">Klik tombol di bawah untuk mengisi formulir kontak kami melalui Google Forms.</p>
+    <a href="https://forms.gle/d71rp3RFbDeXxB2WA" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-700 transition mt-2 text-base">Isi Formulir</a>
+  </div>
+</section>
 
-  <!-- CTA SECTION -->
-  <section id="beli" class="bg-green-500 text-white py-16 text-center">
-    <h2 class="text-3xl font-semibold mb-4">Siap Hidup Lebih Sehat?</h2>
-    <p class="mb-6">Klik tombol di bawah untuk membeli Spencer's Meal Blend di marketplace favoritmu.</p>
-    <div class="flex justify-center gap-4">
-      <a href="https://shopee.co.id/shop/1470692711" target="_blank" class="bg-white text-green-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Shopee</a>
-      <a href="https://www.tokopedia.com/smealblend" target="_blank" class="bg-white text-green-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Tokopedia</a>
-    </div>
-  </section>
+ <footer class="primary text-gray-300 py-8 text-center">
+  <p>&copy; 2025 Spencer's Meal Blend By Amerta. All rights reserved.</p>
+  <p>
+    Follow kami di Instagram: 
+    <a href="https://instagram.com/spencersmealblend.byamerta" target="_blank" class="underline hover:text-white">
+      @spencersmealblend.byamerta
+    </a>
+  </p>
+</footer>
 
-  <!-- FOOTER -->
-  <footer class="bg-gray-800 text-gray-300 py-8 text-center">
-    <p>&copy; 2025 Spencer's Meal Blend. All rights reserved.</p>
-    <p>Follow kami di Instagram: @spencersmealblend.byamerta</p>
-  </footer>
-
+  <!-- AOS SCRIPT -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
